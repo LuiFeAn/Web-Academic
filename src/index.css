@@ -1,13 +1,17 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+body{
+  font-family: 'Orbitron', sans-serif;
+  background: url(https://images.hdqwalls.com/download/future-metropolis-pn-1920x1080.jpg);
+  background-size: cover;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.692);
+  margin:0;
+  padding:0;
+  text-shadow: rgba(25, 46, 25, 0.603) 25px 5px 2px;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body,html{
+  overflow-x: hidden;
+  margin:0;
+  padding:0;
+  scroll-behavior: smooth;
 }
