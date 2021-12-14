@@ -14,6 +14,7 @@ export const MainSection = styled.section`
 
     @media(max-width:780px){
         overflow-y: scroll;
+        overflow-x: hidden;
         height: 600px;
     }
 `;
@@ -32,12 +33,24 @@ export const ContainerText = styled.p`
     padding: 20px;
     border-radius: 10px;
     font-weight: bold;
+
+    @media(max-width: 780px){
+        inline-size: auto;
+    }
 `;
 export const ContainerImg = styled.img`
-    width: 600px;
-    height: 500px;
+    width: 150px;
+    height:150px;
 `;
+export const MoreContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+`;
+export const MoreText = styled.p`
 
+`;
 export const DualContainer = styled.section`
     display: flex;
     justify-content: center;
@@ -107,13 +120,14 @@ export const RegisterContainer = styled.div`
     border: 5px solid white;
     background-size: cover;
     align-items: center;
+    text-align: center;
     border-radius: 10px;
 `;
 export const RegisterText = styled.h1`
     inline-size: 450px;
 
     @media(max-width:780px){
-        inline-size: 250px;
+        inline-size: 350px;
     }
 `;
 export const RegisterInput = styled.input`

@@ -3,6 +3,8 @@ import {useState } from 'react';
 import { Header } from '../../components/header';
 import Footer from '../../components/footer';
 
+import Dev from '../../imgs/developer.png'
+
 const LeadingPage = ()=>{
 
     const [opacity,setopacity] = useState("20%");
@@ -18,14 +20,36 @@ const LeadingPage = ()=>{
            <Header/>
            <S.MainSection onScroll={handleOpacity}>
                 <S.Container>
+                    <S.ContainerImg src = {Dev}/>                
                     <S.ContainerText>
-                        A WEB-ACADEMIC é uma plataforma que disponibiliza acesso gratuito à todos. Através do nosso sistema é possível que pessoas de baixa renda consigam obter acesso à educação de uma forma totalmente democrática e eficaz.
+                        A WEB-ACADEMIC é uma plataforma que disponibiliza acesso gratuito à todos. Através do nosso sistema, é possível que pessoas de baixa renda consigam obter acesso à educação tecnológica de uma forma totalmente democrática e eficaz.
                     </S.ContainerText>
                 </S.Container>
-
+                <S.MoreContainer>
+                    <S.ContainerText>
+                        * Como a WEB-ACADEMIC funciona?
+                    </S.ContainerText>
+                    <S.ContainerText>
+                        Ao se cadastrar, você terá acesso gratuito a todos os nossos cursos de forma instântanea. Através do nosso sistema, você não precisará ter internet para acessar nossa plataforma digital.
+                    </S.ContainerText>
+                    <S.ContainerText>
+                        * Há certificado?
+                    </S.ContainerText>
+                    <S.ContainerText>
+                        Sim! ao término de cada etapa você poderá emitir seu certificado para inseri-lo imediatamente ao seu currículo de forma prática e objetiva.
+                    </S.ContainerText>
+                    <S.ContainerText>
+                        * Tudo isso de graça?
+                    </S.ContainerText>
+                    <S.ContainerText>
+                        Sim! o nosso objetivo aqui é tornar o acesso a educação  prioridade. Como enfatizamos acima, você não precisará pagar absolutamente nada. Dada a situação atual do nosso país, visamos tornar o conhecimento uma constante na vida de todos.
+                    </S.ContainerText>
+                </S.MoreContainer>
                 <S.DualContainer>
                 <S.CoursesContainer>
-                    
+                    <S.CoursesText>
+                        Nossos cursos:
+                    </S.CoursesText>
                     <S.CoursesFrontContainer pos = {opacity}>
                         <S.CoursesTopic>
                             Desenvolvedor Front-End:
