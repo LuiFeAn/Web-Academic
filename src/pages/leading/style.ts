@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import CourseBackground from '../../imgs/CoursesBackground.jpg'
 
 export const MainSection = styled.section`
     display: flex;
@@ -43,7 +44,7 @@ export const DualContainer = styled.section`
     margin: 100px 0px;
     transition: 2s;
     flex:1;
-    background:url(https://uhdwallpapers.org/uploads/converted/18/10/03/antares-the-metropolis-of-the-future-image-1600x900_55864-mm-90.jpg);
+    background:url(${CourseBackground});
     background-size:cover;
 
     @media(max-width:780px){
@@ -68,7 +69,7 @@ export const CoursesContainer = styled.div`
     }
 
     @media(max-width:780px){
-        background:url(https://uhdwallpapers.org/uploads/converted/18/10/03/antares-the-metropolis-of-the-future-image-1600x900_55864-mm-90.jpg);
+        background:url(${CourseBackground});
         background-size: cover;
     }
 `;

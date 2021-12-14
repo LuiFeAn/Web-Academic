@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 body{
   font-family: 'Orbitron', sans-serif;
-  background: url(https://images.hdqwalls.com/download/future-metropolis-pn-1920x1080.jpg);
+  background: url(./imgs/background.jpg);
   background-size: cover;
   user-select: none;
   background-color: rgba(0, 0, 0, 0.692);
