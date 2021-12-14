@@ -1,21 +1,32 @@
 import * as S from './style'
+import {useState } from 'react';
 import { Header } from '../../components/header';
 import Footer from '../../components/footer';
 
 const LeadingPage = ()=>{
+
+    const [opacity,setopacity] = useState("20%");
+
+    const handleOpacity = (prop:React.UIEvent<HTMLDivElement>)=>{
+        const scrollMobile = prop.currentTarget.scrollTop;
+        scrollMobile > 250? setopacity("100%") : setopacity("20%");
+
+    }
+
     return(
         <>
            <Header/>
-           <S.MainSection>
+           <S.MainSection onScroll={handleOpacity}>
                 <S.Container>
                     <S.ContainerText>
                         A WEB-ACADEMIC é uma plataforma que disponibiliza acesso gratuito à todos. Através do nosso sistema é possível que pessoas de baixa renda consigam obter acesso à educação de uma forma totalmente democrática e eficaz.
                     </S.ContainerText>
                 </S.Container>
+
                 <S.DualContainer>
                 <S.CoursesContainer>
                     
-                    <S.CoursesFrontContainer>
+                    <S.CoursesFrontContainer pos = {opacity}>
                         <S.CoursesTopic>
                             Desenvolvedor Front-End:
                             <S.CoursesText>
@@ -24,7 +35,7 @@ const LeadingPage = ()=>{
                         </S.CoursesTopic>
                     </S.CoursesFrontContainer>
 
-                    <S.CoursesBackContainer>
+                    <S.CoursesBackContainer pos = {opacity}>
                         <S.CoursesTopic>
                             Desenvovedor Back-End:
                             <S.CoursesText>
@@ -33,7 +44,7 @@ const LeadingPage = ()=>{
                         </S.CoursesTopic>
                     </S.CoursesBackContainer>
 
-                    <S.CoursesFullContainer>
+                    <S.CoursesFullContainer pos = {opacity}> 
                         <S.CoursesTopic>
                             Desenvolvedor FullStack:
                             <S.CoursesText>

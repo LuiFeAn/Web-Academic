@@ -41,6 +41,7 @@ export const DualContainer = styled.section`
     display: flex;
     justify-content: center;
     margin: 100px 0px;
+    transition: 2s;
     flex:1;
     background:url(https://uhdwallpapers.org/uploads/converted/18/10/03/antares-the-metropolis-of-the-future-image-1600x900_55864-mm-90.jpg);
     background-size:cover;
@@ -60,6 +61,7 @@ export const CoursesContainer = styled.div`
     
     div{
         padding:10px;
+        transition: 1s;
         margin: 10px;
         background-color: rgba(0, 0, 0, 0.692);
         border-radius: 10px;
@@ -70,13 +72,20 @@ export const CoursesContainer = styled.div`
         background-size: cover;
     }
 `;
-export const CoursesFrontContainer = styled.div`
+export const CoursesFrontContainer = styled.div<{pos?:string}>`
+    @media(max-width:780px){
+        opacity: ${props=>props.pos};
+    }
 `;
-export const CoursesBackContainer = styled.div`
-
+export const CoursesBackContainer = styled.div<{pos?:string}>`
+    @media(max-width:780px){
+         opacity: ${props=>props.pos};
+    }   
 `;
-export const CoursesFullContainer = styled.div`
-   
+export const CoursesFullContainer = styled.div<{pos?:string}>`
+    @media(max-width:780px){
+        opacity: ${props=>props.pos};
+    }
 `;
 export const CoursesTopic = styled.h1``;
 export const CoursesText = styled.p`
@@ -117,6 +126,7 @@ export const RegisterInput = styled.input`
 `;
 export const RegisterButton = styled.button`
     width: 250px;
+    cursor: pointer;
     height: 50px;
     border-radius: 10px;
     color: white;
