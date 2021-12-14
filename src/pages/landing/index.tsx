@@ -5,13 +5,13 @@ import Footer from '../../components/footer';
 
 import Dev from '../../imgs/developer.png'
 
-const LeadingPage = ()=>{
+const LandingPage = ()=>{
 
-    const [opacity,setopacity] = useState("20%");
+    const [opacity,setopacity] = useState("10%");
 
     const handleOpacity = (prop:React.UIEvent<HTMLDivElement>)=>{
         const scrollMobile = prop.currentTarget.scrollTop;
-        scrollMobile > 250? setopacity("100%") : setopacity("20%");
+        scrollMobile > 1900? setopacity("100%") : setopacity("10%");
 
     }
 
@@ -95,4 +95,4 @@ const LeadingPage = ()=>{
         </>
     )
 }
-export default LeadingPage;
+export default LandingPage;

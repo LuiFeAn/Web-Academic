@@ -1,8 +1,8 @@
-import LeadingPage from "./pages/leading";
+import LandingPage from "./pages/landing";
 
 const App = ()=>{
   return(
-    <LeadingPage/>
+    <LandingPage/>
   )
 }
 export default App
