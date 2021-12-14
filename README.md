@@ -1,5 +1,5 @@
 # Web-Academic
-Projeto sendo feito para o processo seletivo da RocketSeat.
+Projet feito para o processo seletivo de bolsas da RocketSeat.
 ## Instalação
 npm install para instalar as dependências
 ## Execução
