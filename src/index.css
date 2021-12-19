@@ -6,6 +6,7 @@ body{
   user-select: none;
   background-color: rgba(0, 0, 0, 0.692);
   margin:0;
+  background-attachment: fixed;
   padding:0;
   text-shadow: rgba(25, 46, 25, 0.603) 25px 5px 2px;
 }

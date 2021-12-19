@@ -46,6 +46,7 @@ const LandingPage = ()=>{
                     </S.ContainerText>
                 </S.MoreContainer>
                 <S.DualContainer>
+                    
                 <S.CoursesContainer>
                     <S.CoursesText>
                         Nossos cursos:
