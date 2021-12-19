@@ -30,7 +30,7 @@ const LandingPage = ()=>{
                         * Como a WEB-ACADEMIC funciona?
                     </S.ContainerText>
                     <S.ContainerText>
-                        Ao se cadastrar, você terá acesso gratuito a todos os nossos cursos de forma instântanea. Através do nosso sistema, você não precisará ter internet para acessar nossa plataforma digital.
+                        Ao se cadastrar, você terá acesso gratuito a todos os nossos cursos de forma instântanea. Através do nosso sistema, você não precisará consumir sua internet para acessar nossa plataforma digital.
                     </S.ContainerText>
                     <S.ContainerText>
                         * Há certificado?
