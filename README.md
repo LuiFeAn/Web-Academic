@@ -6,5 +6,3 @@ Feito para o processo seletivo de bolsas da RocketSeat.
 npm install para instalar as dependências
 ## Execução
 npm start para iniciar o servidor
-
-![Screenshot](screenshots/desktop.png)
